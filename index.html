@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>GIF-SEARCH</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel ="stylesheet" href = "css/home.css">  
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="p-3 navbar navbar-expand-lg navbar-dark bg-primary static-top">
+    <div class="container">
+      <a class="navbar-brand text-lg" href="#"><h1>Giphy Search</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">sss</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> <h3> Home</h3>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <h3> About</h3></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <h3> Pawan Kholiya </h3> </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">A GIF Search Engine</h1>
+        <div class="p-3">
+          <form   name="searchform" class ="searchbar center-block h-100" onsubmit="return false"  >
+            <input class=" bordered round p-2 search_input" name="searchtext" type="text" placeholder="Type..">
+            <button type="button" onclick="search()" class = "search_icon"><i class="fa fa-search"></i></button>
+
+          </form>
+        </div>
+        <p class="lead">Search Your favourite GIF's Here!</p>
+
+        <div class="row"  id="showgif" >
+          <!-- <div class="col-sm-3">
+          <img class="img-fluid" src="https://media2.giphy.com/media/l0MYBMYPwBcaZdgNW/giphy.gif"></img>
+            </div> -->
+        </div>
+        <!-- <ul class="list-unstyled">
+          <li>Bootstrap 4.5.0</li>
+          <li>jQuery 3.5.1</li>
+        </ul> -->
+        <div>
+          <button class="mx-auto btn btn-primary " onclick="addchild()" >Load More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
